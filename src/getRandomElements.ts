@@ -16,23 +16,14 @@ function getRandomElements(array: string[], numOfItems: number): string[] {
     }
     // новый массив, который вернёт функция
     let newArray: string[] = [];
-    // счётчик (костыли, которые можно наверняка убрать)
-    let i = 1;
-    // Цикл будет работать, пока новый массив меньше нужного кол-ва элементов
-    do {
-        // пробегаем по всему входному массиву, возвращаем элементы, пока счётчик не сравняется с нужным кол-вом элементов
-        newArray = array.filter(el => {
-            if (i <= numOfItems) {
-                if (Math.round(Math.random())) {
-                    i++;
-                    return el;
-                }
-                else {
-
-                }
-            }
-        })
-    } while (newArray.length<numOfItems)
+    // функция для рандом элемента
+    function randomValue(max: number): number {
+        return Math.floor(Math.random() * max);
+    }
+    // цикл для заполнения нового массива
+    while (newArray.length < numOfItems) {
+        newArray.push(array[randomValue(array.length)])
+    }
     return newArray;
 }
 
