@@ -21,8 +21,19 @@ function getRandomElements(array: string[], numOfItems: number): string[] {
         return Math.floor(Math.random() * max);
     }
     // цикл для заполнения нового массива
+    let valueNow:string = '1';
     while (newArray.length < numOfItems) {
-        newArray.push(array[randomValue(array.length)])
+        valueNow = array[randomValue(array.length)];
+        for (let i=0;i<newArray.length;i++) {
+            if (valueNow === newArray [i]) {
+                newArray [i] = valueNow;
+                valueNow = '1';
+                i=newArray.length;
+            }
+        }
+        if (valueNow !== '1') {
+            newArray.push (valueNow);
+        }
     }
     return newArray;
 }
