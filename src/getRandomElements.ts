@@ -9,7 +9,7 @@
  * @param numOfItems - кол-во элементов которое вернет ф-я
  * @returns массив случайных неповторяющихся элементов
  */
- function getRandomElements(array: string[], numOfItems: number): string[] {
+function getRandomElements(array: string[], numOfItems: number): string[] {
     // проверяем, чтобы нужное кол-во элементов не былло больше массива
     if (array.length < numOfItems) {
         numOfItems = array.length;
@@ -32,7 +32,7 @@
                 }
             }
         })
-    } while (newArray.length < numOfItems)
+    } while (newArray.length<numOfItems)
     return newArray;
 }
 
