@@ -15,7 +15,9 @@ import getArrayOfUniqueValues from "./utils/getArrayOfUniqueValues";
 const N = 100;
 const ARRAY_OF_UNIQUE_VALUES = getArrayOfUniqueValues(N);
 
-const result = getRandomElements(ARRAY_OF_UNIQUE_VALUES, 5);
+const result = getRandomElements(ARRAY_OF_UNIQUE_VALUES, 60);
+console.log(ARRAY_OF_UNIQUE_VALUES);
+
 console.log(result);
 
 
