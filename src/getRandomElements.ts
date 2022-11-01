@@ -28,5 +28,3 @@ function getRandomElements(array: string[], numOfItems: number): string[] {
 }
 
 export default getRandomElements;
-
-// Нерешенные проблемы - 1. Начальные элементы чаще. 2. Если нужное кол-во элементов больше массива, то пизда  UPD: цикл бесконечным становится, похоже, если второй раз в него заходит
