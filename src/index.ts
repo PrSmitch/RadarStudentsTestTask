@@ -12,10 +12,10 @@ import getArrayOfUniqueValues from "./utils/getArrayOfUniqueValues";
 
 //********************************************************************* 
 
-const N = 3;
+const N = 10;
 const ARRAY_OF_UNIQUE_VALUES = getArrayOfUniqueValues(N);
 
-const result = getRandomElements(ARRAY_OF_UNIQUE_VALUES, 2);
+const result = getRandomElements(ARRAY_OF_UNIQUE_VALUES, 20);
 
 console.log(result);
 
