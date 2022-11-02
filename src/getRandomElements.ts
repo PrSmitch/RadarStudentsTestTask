@@ -35,7 +35,7 @@ function getRandomElements(array: string[], numOfItems: number): string[] {
                 i = newArray.length;
             }
         }
-        // если перменная не единица, то забираем её в итоговый массив 
+        // если перменная true, то забираем её в итоговый массив 
         if (valueNow) {
             newArray.push(valueNow);
         }
