@@ -22,5 +22,5 @@ console.log(result);
 
 //********************************************************************* 
 
-const table = new Table();
+const table = new Table(['123','22'], ['22','66'],[true,false]);
 table.print();
