@@ -21,23 +21,23 @@ function getRandomElements(array: string[], numOfItems: number): string[] {
         return Math.floor(Math.random() * max);
     }
     // переменная для проверки
-    let valueNow:string = '1';
-     // цикл для заполнения нового массива
+    let valueNow: string = '';
+    // цикл для заполнения нового массива
     while (newArray.length < numOfItems) {
         // рандомим элемент массива и кидаем его в переменную
         valueNow = array[randomValue(array.length)];
         // цикл для проверки, чтобы этого элемента уже не было в итоговом массиве
-        for (let i=0;i<newArray.length;i++) {
+        for (let i = 0; i < newArray.length; i++) {
             // если узнали, что он есть, то просто кидаем на место того же элемента, а переменной присваиваем '1'. Чтобы выйти из цикла, сразу приравниваем i к длине массива
-            if (valueNow === newArray [i]) {
-                newArray [i] = valueNow;
-                valueNow = '1';
-                i=newArray.length;
+            if (valueNow === newArray[i]) {
+                newArray[i] = valueNow;
+                valueNow = '';
+                i = newArray.length;
             }
         }
         // если перменная не единица, то забираем её в итоговый массив 
-        if (valueNow !== '1') {
-            newArray.push (valueNow);
+        if (valueNow) {
+            newArray.push(valueNow);
         }
     }
     return newArray;
