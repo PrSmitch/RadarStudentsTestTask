@@ -1,18 +1,16 @@
+
 class Table {
 
-    private nameHero: string [];
-    private role: string [];
-    public meta: boolean [];
+    private data: any [] 
 
-    constructor(nameHero: string [], role: string[], meta: boolean[]) {
-        this.nameHero = nameHero;
-        this.role = role;
-        this.meta = meta;
-    }
+    constructor (data: any []) {
+        this.data = data;
+        }
 
     print(): void {
-        console.table (this)
+        console.table (this);
     }
+
 
 }
 

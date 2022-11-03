@@ -22,5 +22,14 @@ console.log(result);
 
 //********************************************************************* 
 
-const table = new Table(['123','22'], ['22','66'],[true,false]);
-table.print();
+
+const faHer=[{pos: 1, nick: "PrSmitch", mmr: 1500},
+         {pos: 2, nick: "RaeB", mmr: 1600},
+         {pos: 3, nick: "Lean", mmr: 4000},
+         {pos: 4, nick: "Shapochkin", mmr: 0},
+         {pos: 5, nick: "Gleb", mmr: 90}
+];
+const table2 = new Table (faHer);
+table2.print ();
+
+console.table (faHer);
