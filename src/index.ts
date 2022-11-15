@@ -27,3 +27,8 @@ const array2 = new Table ( [['tag','total','passed','totalTime'],  ['Record', '7
 
 array2.print ();
 
+array2.addLine (['Location', '8','8', '2s 55ms']);
+
+array2.print ();
+
+array2.some;
