@@ -23,13 +23,7 @@ console.log(result);
 //********************************************************************* 
 
 
-const faHer=[{pos: 1, nick: "PrSmitch", mmr: 1500},
-         {pos: 2, nick: "RaeB", mmr: 1600},
-         {pos: 3, nick: "Lean", mmr: 4000},
-         {pos: 4, nick: "Shapochkin", mmr: 0},
-         {pos: 5, nick: "Gleb", mmr: 90}
-];
-const table2 = new Table (faHer);
-table2.print ();
+const array2 = new Table ( [['tag','total','passed','totalTime'],  ['Record', '7', '7', '5s 456ms'], ['Backup', '2', '2', '8s 444ms']] );
 
-console.table (faHer);
+array2.print ();
+
